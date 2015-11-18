@@ -31,11 +31,10 @@ class URL
 
     /**
      * URL constructor.
-     * @param $url
-     * @param string $protocol
+     * @param string $url
      * @throws \Exception
      */
-    public function __construct($url, $protocol = 'http')
+    public function __construct($url)
     {
         if (empty($url)) {
             throw new \Exception('url parameter is required');
